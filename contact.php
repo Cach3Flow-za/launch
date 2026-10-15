@@ -126,22 +126,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <span class="brand-name">Cach3Flow</span>
         </div>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="index.php">Home</a>
-          <a href="about.php">About us</a>
-          <a href="services.php">Services</a>
-          <a href="portfolio.php">Portfolio</a>
-          <a href="it-support.php">IT support</a>
+          <a href="index.htm">Home</a>
+          <a href="about.htm">About us</a>
+          <a href="services.htm">Services</a>
+          <a href="portfolio.htm">Portfolio</a>
+          <a href="it-support.htm">IT support</a>
           <a href="contact.php" aria-current="page">Contact</a>
         </nav>
         <a class="btn btn-primary" href="contact.php" aria-current="page">Contact us</a>
         <details class="mobile-menu">
           <summary aria-label="Toggle navigation menu" title="Menu"><span class="mobile-menu-icon" aria-hidden="true"></span></summary>
           <nav class="mobile-menu-panel" aria-label="Mobile navigation">
-            <a href="index.php">Home</a>
-            <a href="about.php">About us</a>
-            <a href="services.php">Services</a>
-            <a href="portfolio.php">Portfolio</a>
-            <a href="it-support.php">IT support</a>
+            <a href="index.htm">Home</a>
+            <a href="about.htm">About us</a>
+            <a href="services.htm">Services</a>
+            <a href="portfolio.htm">Portfolio</a>
+            <a href="it-support.htm">IT support</a>
             <a href="contact.php" aria-current="page">Contact</a>
           </nav>
         </details>
@@ -213,7 +213,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="contact-aside-support">
               <h3>Need IT assistance?</h3>
               <p>For support requests, include the affected device, website, software, or network.</p>
-              <a href="it-support.php">View IT support</a>
+              <a href="it-support.htm">View IT support</a>
             </div>
           </aside>
         </div>
@@ -232,18 +232,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
           <div class="footer-links">
             <h4>Company</h4>
-            <a href="about.php">About us</a>
-            <a href="services.php">Services</a>
-            <a href="portfolio.php">Portfolio</a>
-            <a href="it-support.php">IT support</a>
+            <a href="about.htm">About us</a>
+            <a href="services.htm">Services</a>
+            <a href="portfolio.htm">Portfolio</a>
+            <a href="it-support.htm">IT support</a>
             <a href="contact.php">Contact</a>
           </div>
           <div class="footer-links">
             <h4>Services</h4>
-            <a href="services.php#web-software">Web &amp; software</a>
-            <a href="services.php#applications">Cross-platform apps</a>
-            <a href="services.php#hosting-security">Hosting, security &amp; SEO</a>
-            <a href="it-support.php#hardware-networking">Hardware &amp; networking</a>
+            <a href="services.htm#web-software">Web &amp; software</a>
+            <a href="services.htm#applications">Cross-platform apps</a>
+            <a href="services.htm#hosting-security">Hosting, security &amp; SEO</a>
+            <a href="it-support.htm#hardware-networking">Hardware &amp; networking</a>
           </div>
           <div class="footer-cta">
             <h4>Get in touch</h4>
