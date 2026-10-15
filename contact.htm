@@ -1,112 +1,4 @@
-<?php
-declare(strict_types=1);
 
-session_start([
-  'cookie_httponly' => true,
-  'cookie_samesite' => 'Lax',
-  'cookie_secure' => isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off',
-]);
-
-require_once __DIR__ . '/DB/database.php';
-
-$contactServices = [
-  'Web development',
-  'Custom software',
-  'Cross-platform apps',
-  'Web hosting',
-  'Cybersecurity',
-  'SEO or web management',
-  'Hardware or networking',
-  'IT technician support',
-  'Something else',
-];
-$formData = array_fill_keys(['name', 'email', 'company', 'service', 'message'], '');
-$contactStatus = $_SESSION['contact_form_status'] ?? '';
-$contactStatusType = $_SESSION['contact_form_status_type'] ?? 'info';
-$formData = $_SESSION['contact_form_values'] ?? $formData;
-unset($_SESSION['contact_form_status'], $_SESSION['contact_form_status_type'], $_SESSION['contact_form_values']);
-
-function contact_escape(string $value): string
-{
-  return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-}
-
-function contact_post_value(string $key): string
-{
-  $value = $_POST[$key] ?? '';
-  return is_string($value) ? trim($value) : '';
-}
-
-function redirect_contact_form(string $status, string $type, array $values): void
-{
-  $_SESSION['contact_form_status'] = $status;
-  $_SESSION['contact_form_status_type'] = $type;
-  $_SESSION['contact_form_values'] = $values;
-  header('Location: contact.php#contact-form', true, 303);
-  exit;
-}
-
-if (!isset($_SESSION['contact_form_token'])) {
-  $_SESSION['contact_form_token'] = bin2hex(random_bytes(32));
-}
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  foreach (array_keys($formData) as $field) {
-    $formData[$field] = contact_post_value($field);
-  }
-
-  $postedToken = contact_post_value('csrf_token');
-  if (!hash_equals($_SESSION['contact_form_token'], $postedToken)) {
-    redirect_contact_form('Your session expired. Please review the form and try again.', 'error', $formData);
-  }
-
-  if (contact_post_value('website') !== '') {
-    $_SESSION['contact_form_token'] = bin2hex(random_bytes(32));
-    redirect_contact_form('Thanks for contacting Cach3Flow.', 'success', array_fill_keys(array_keys($formData), ''));
-  }
-
-  $errors = [];
-  if ($formData['name'] === '' || strlen($formData['name']) > 150) {
-    $errors[] = 'Enter your name (up to 150 characters).';
-  }
-  if (!filter_var($formData['email'], FILTER_VALIDATE_EMAIL)) {
-    $errors[] = 'Enter a valid email address.';
-  }
-  if (strlen($formData['company']) > 150) {
-    $errors[] = 'Company name must be 150 characters or fewer.';
-  }
-  if (!in_array($formData['service'], $contactServices, true)) {
-    $errors[] = 'Choose a service from the list.';
-  }
-  if ($formData['message'] === '' || strlen($formData['message']) > 10000) {
-    $errors[] = 'Enter a message of up to 10,000 characters.';
-  }
-
-  if ($errors !== []) {
-    redirect_contact_form(implode(' ', $errors), 'error', $formData);
-  }
-
-  try {
-    $pdo = cach3flow_pdo();
-    $statement = $pdo->prepare(
-      'INSERT INTO `Client_Details` (`Email`, `Name`, `Company`, `What_ you_need_help_with?`, `How_can_we_help`) VALUES (?, ?, ?, ?, ?)'
-    );
-    $statement->execute([
-      $formData['email'],
-      $formData['name'],
-      $formData['company'] !== '' ? $formData['company'] : null,
-      $formData['service'],
-      $formData['message'],
-    ]);
-
-    $_SESSION['contact_form_token'] = bin2hex(random_bytes(32));
-    redirect_contact_form('Thanks for contacting Cach3Flow. Your message has been received.', 'success', array_fill_keys(array_keys($formData), ''));
-  } catch (Throwable $error) {
-    error_log('Cach3Flow contact form database insert failed: ' . $error->getMessage());
-    redirect_contact_form('We could not save your message. Please email hello@cach3flow.com.', 'error', $formData);
-  }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -131,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <a href="services.htm">Services</a>
           <a href="portfolio.htm">Portfolio</a>
           <a href="it-support.htm">IT support</a>
-          <a href="contact.php" aria-current="page">Contact</a>
+          <a href="contact.htm" aria-current="page">Contact</a>
         </nav>
         <a class="btn btn-primary" href="contact.php" aria-current="page">Contact us</a>
         <details class="mobile-menu">
@@ -142,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="services.htm">Services</a>
             <a href="portfolio.htm">Portfolio</a>
             <a href="it-support.htm">IT support</a>
-            <a href="contact.php" aria-current="page">Contact</a>
+            <a href="contact.htm" aria-current="page">Contact</a>
           </nav>
         </details>
       </div>
@@ -236,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="services.htm">Services</a>
             <a href="portfolio.htm">Portfolio</a>
             <a href="it-support.htm">IT support</a>
-            <a href="contact.php">Contact</a>
+            <a href="contact.htm">Contact</a>
           </div>
           <div class="footer-links">
             <h4>Services</h4>
