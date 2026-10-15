@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Cach3Flow | Software &amp; IT Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Style/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" aria-label="Cach3Flow brand">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-name">Cach3Flow</span>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.php">Home</a>
+          <a href="about.php" aria-current="page">About us</a>
+          <a href="services.php">Services</a>
+          <a href="portfolio.php">Portfolio</a>
+          <a href="it-support.php">IT support</a>
+          <a href="contact.php">Contact</a>
+        </nav>
+        <a class="btn btn-primary" href="contact.php">Contact us</a>
+        <details class="mobile-menu">
+          <summary aria-label="Toggle navigation menu" title="Menu"><span class="mobile-menu-icon" aria-hidden="true"></span></summary>
+          <nav class="mobile-menu-panel" aria-label="Mobile navigation">
+            <a href="index.php">Home</a>
+            <a href="about.php" aria-current="page">About us</a>
+            <a href="services.php">Services</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="it-support.php">IT support</a>
+            <a href="contact.php">Contact</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-layout">
+          <div class="page-hero-content">
+            <div class="eyebrow" aria-hidden="true"></div>
+            <p class="page-kicker">About Cach3Flow</p>
+            <h1>Technology that works for your business.</h1>
+            <p>We bring software development and practical IT services together, helping businesses build, manage, and support the technology they rely on.</p>
+          </div>
+          <figure class="page-hero-image">
+            <img src="Images/Website-and-software.png" alt="A team creating a website and software" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="page-section-title">One partner across your technology stack</h2>
+          <p class="page-copy">From a new website or custom application to secure hosting, network setup, hardware, and ongoing technician support, Cach3Flow can help you plan the next step and keep essential systems moving.</p>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon"><img src="Images/Website-and-software-icon.png" alt="" /></div>
+              <h3>Understand the need</h3>
+              <p>We start with your goals, users, and existing setup to shape a practical scope for the work.</p>
+            </article>
+            <article class="service-card featured">
+              <div class="service-icon"><img src="Images/Cross-platform-apps-icon.png" alt="" /></div>
+              <h3>Build with purpose</h3>
+              <p>We develop digital products and configure technology around real workflows, not one-size-fits-all assumptions.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><img src="Images/IT_Infrastructure-icon.png" alt="" /></div>
+              <h3>Support what matters</h3>
+              <p>Get help maintaining websites, improving security, troubleshooting equipment, and managing IT needs over time.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta">
+        <div class="container">
+          <div class="cta-panel">
+            <div class="cta-copy">
+              <h2>Let’s talk about your technology needs.</h2>
+              <p>Share what you are planning, building, or trying to fix.</p>
+            </div>
+            <a class="btn btn-primary" href="contact.php">Contact Cach3Flow</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-brand-mark" aria-label="Cach3Flow brand">
+              <span class="brand-mark">&lt;/&gt;</span>
+              <span class="brand-name">Cach3Flow</span>
+            </div>
+            <p>Software development and dependable IT services for the technology your business relies on.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <a href="about.php">About us</a>
+            <a href="services.php">Services</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="it-support.php">IT support</a>
+            <a href="contact.php">Contact</a>
+          </div>
+          <div class="footer-links">
+            <h4>Services</h4>
+            <a href="services.php#web-software">Web &amp; software</a>
+            <a href="services.php#applications">Cross-platform apps</a>
+            <a href="services.php#hosting-security">Hosting, security &amp; SEO</a>
+            <a href="it-support.php#hardware-networking">Hardware &amp; networking</a>
+          </div>
+          <div class="footer-cta">
+            <h4>Get in touch</h4>
+            <p><a href="mailto:hello@cach3flow.com">hello@cach3flow.com</a></p>
+            <p>Tell us what support you need.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Cach3Flow</span>
+          <span>Software, web, and IT services</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

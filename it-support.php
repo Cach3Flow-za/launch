@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Support | Cach3Flow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Style/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" aria-label="Cach3Flow brand">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-name">Cach3Flow</span>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.php">Home</a>
+          <a href="about.php">About us</a>
+          <a href="services.php">Services</a>
+          <a href="portfolio.php">Portfolio</a>
+          <a href="it-support.php" aria-current="page">IT support</a>
+          <a href="contact.php">Contact</a>
+        </nav>
+        <a class="btn btn-primary" href="contact.php">Contact us</a>
+        <details class="mobile-menu">
+          <summary aria-label="Toggle navigation menu" title="Menu"><span class="mobile-menu-icon" aria-hidden="true"></span></summary>
+          <nav class="mobile-menu-panel" aria-label="Mobile navigation">
+            <a href="index.php">Home</a>
+            <a href="about.php">About us</a>
+            <a href="services.php">Services</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="it-support.php" aria-current="page">IT support</a>
+            <a href="contact.php">Contact</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-layout">
+          <div class="page-hero-content">
+            <div class="eyebrow" aria-hidden="true"></div>
+            <p class="page-kicker">IT support</p>
+            <h1>Practical help for the technology you use every day.</h1>
+            <p>Get hands-on assistance with hardware, software, networks, websites, and common technical issues affecting your work.</p>
+            <a class="btn btn-primary page-contact-link" href="contact.php">Request IT support</a>
+          </div>
+          <figure class="page-hero-image">
+            <img src="Images/IT_Infrastructure.png" alt="Connected servers, cloud hosting, and secure IT infrastructure" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="page-section-title">Support for your workplace technology</h2>
+          <p class="page-copy">Describe what is happening and what you need to accomplish. Cach3Flow can help assess the issue and identify a next step, whether it involves one device or a broader business system.</p>
+          <div class="services-grid">
+            <article class="service-card featured">
+              <div class="service-icon"><img src="Images/IT_Infrastructure-icon.png" alt="" /></div>
+              <h3>Hardware &amp; Devices</h3>
+              <p>Setup, configuration, diagnostics, and troubleshooting for computers and workplace equipment.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><img src="Images/IT_Infrastructure-icon.png" alt="" /></div>
+              <h3>Networking &amp; Connectivity</h3>
+              <p>Assistance with network setup, device connections, and common connectivity problems.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><img src="Images/Website-and-software-icon.png" alt="" /></div>
+              <h3>Software &amp; Accounts</h3>
+              <p>Help with software installation, configuration, access, and day-to-day technical issues.</p>
+            </article>
+            <article id="hardware-networking" class="service-card">
+              <div class="service-icon"><img src="Images/Website-and-software-icon.png" alt="" /></div>
+              <h3>Websites &amp; Hosting</h3>
+              <p>Website management, hosting support, updates, and troubleshooting for online services.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><img src="Images/IT_Infrastructure-icon.png" alt="" /></div>
+              <h3>Security Guidance</h3>
+              <p>Technical help reviewing security concerns and improving how devices, websites, and accounts are managed.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><img src="Images/IT_Infrastructure-icon.png" alt="" /></div>
+              <h3>IT Setup &amp; Maintenance</h3>
+              <p>Help configuring technology for new users, workspaces, and changing business requirements.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta">
+        <div class="container">
+          <div class="cta-panel">
+            <div class="cta-copy">
+              <h2>Tell us what’s not working.</h2>
+              <p>Send a short description of the issue and the devices or services involved.</p>
+            </div>
+            <a class="btn btn-primary" href="mailto:hello@cach3flow.com?subject=IT%20support%20request">Email IT support</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-brand-mark" aria-label="Cach3Flow brand">
+              <span class="brand-mark">&lt;/&gt;</span>
+              <span class="brand-name">Cach3Flow</span>
+            </div>
+            <p>Software development and dependable IT services for the technology your business relies on.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <a href="about.php">About us</a>
+            <a href="services.php">Services</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="it-support.php">IT support</a>
+            <a href="contact.php">Contact</a>
+          </div>
+          <div class="footer-links">
+            <h4>Services</h4>
+            <a href="services.php#web-software">Web &amp; software</a>
+            <a href="services.php#applications">Cross-platform apps</a>
+            <a href="services.php#hosting-security">Hosting, security &amp; SEO</a>
+            <a href="it-support.php#hardware-networking">Hardware &amp; networking</a>
+          </div>
+          <div class="footer-cta">
+            <h4>Get in touch</h4>
+            <p><a href="mailto:hello@cach3flow.com">hello@cach3flow.com</a></p>
+            <p>Tell us what support you need.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Cach3Flow</span>
+          <span>Software, web, and IT services</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

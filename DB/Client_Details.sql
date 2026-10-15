@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `Client_Details` (
+  `ID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Email` VARCHAR(254) NOT NULL,
+  `Name` VARCHAR(150) NOT NULL,
+  `Company` VARCHAR(150) NULL,
+  `What_ you_need_help_with?` VARCHAR(100) NOT NULL,
+  `How_can_we_help` TEXT NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cach3Flow | Software &amp; IT Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Style/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" aria-label="Cach3Flow brand">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-name">Cach3Flow</span>
+        </div>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.php" aria-current="page">Home</a>
+          <a href="about.php">About us</a>
+          <a href="services.php">Services</a>
+          <a href="portfolio.php">Portfolio</a>
+          <a href="it-support.php">IT support</a>
+          <a href="contact.php">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary" href="contact.php">Contact us</a>
+        <details class="mobile-menu">
+          <summary aria-label="Toggle navigation menu" title="Menu"><span class="mobile-menu-icon" aria-hidden="true"></span></summary>
+          <nav class="mobile-menu-panel" aria-label="Mobile navigation">
+            <a href="index.php" aria-current="page">Home</a>
+            <a href="about.php">About us</a>
+            <a href="services.php">Services</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="it-support.php">IT support</a>
+            <a href="contact.php">Contact</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <div class="eyebrow" aria-hidden="true"></div>
+            <h1>
+              Software and IT<br />
+              that <span class="gradient-text">move</span> your <span class="highlight">business</span>
+            </h1>
+            <p>
+              From websites and custom software to cybersecurity, networking, and hands-on IT support, Cach3Flow helps keep your technology moving.
+            </p>
+            <div style="margin-top: 30px;">
+              <a class="btn btn-primary" href="#services">Explore our services</a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <img src="Images/Website-and-software.png" alt="Software developers working on a website and code" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about">
+          <div>
+            <div class="eyebrow" aria-hidden="true"></div>
+            <h2 class="section-title">
+              <span class="light">Technology for the way</span><br />
+              your business works
+            </h2>
+            <p class="about-copy">
+              We plan, build, secure, and support the digital tools businesses rely on. Get practical help with software, apps, websites, hosting, SEO, hardware, and network systems from one IT partner.
+            </p>
+            <a class="link-row" href="#services">
+              <span>Explore our services</span>
+              <span class="arrow" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <div class="video-card">
+            <img src="Images/IT_Infrastructure.png" alt="A team working with connected IT infrastructure" />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="container">
+          <div class="services-header">
+            <div class="eyebrow" style="margin: 0 auto 18px;" aria-hidden="true"></div>
+            <h2 class="section-title">Software, web, and IT services</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="https://www.figma.com/api/mcp/asset/68716fb5-6690-45cc-9cdf-bd77775d9b29/3b914.png" alt="Mobile app icon" />
+              </div>
+              <h3>Web &amp; Software Development</h3>
+              <p>
+                Custom websites, business software, integrations, and ongoing web management shaped around your workflows and goals.
+              </p>
+            </article>
+
+            <article class="service-card featured">
+              <div class="service-icon">
+                <img src="https://www.figma.com/api/mcp/asset/68716fb5-6690-45cc-9cdf-bd77775d9b29/70ceb.png" alt="Web design icon" />
+              </div>
+              <h3>Cross-Platform App Development</h3>
+              <p>
+                Mobile and desktop applications designed to give people a consistent experience across the devices they use.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="https://www.figma.com/api/mcp/asset/68716fb5-6690-45cc-9cdf-bd77775d9b29/37435.png" alt="Software testing icon" />
+              </div>
+              <h3>Hosting, Security &amp; SEO</h3>
+              <p>
+                Web hosting, cybersecurity, search engine optimization, maintenance, and practical steps to keep your online services healthy.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon"><img src="Images/IT_Infrastructure-icon.png" alt="" /></div>
+              <h3>Hardware &amp; Networking</h3>
+              <p>Hardware setup and troubleshooting, network planning, connectivity, and systems configured for your workplace.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon"><img src="Images/IT_Infrastructure-icon.png" alt="" /></div>
+              <h3>IT Technician Services</h3>
+              <p>Hands-on technical support for setup, maintenance, diagnostics, and the everyday technology issues that slow work down.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-strip">
+        <svg class="service-doodles" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="service-doodle-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="var(--teal)" />
+              <stop offset="28%" stop-color="var(--slate)" />
+              <stop offset="52%" stop-color="var(--cyan)" />
+              <stop offset="76%" stop-color="var(--purple)" />
+              <stop offset="100%" stop-color="var(--lime)" />
+            </linearGradient>
+          </defs>
+          <path class="service-doodle service-doodle-one" pathLength="100" d="M28 72 C54 22 84 26 103 52 S145 88 174 38 S224 24 262 62" />
+          <path class="service-doodle service-doodle-two" pathLength="100" d="M300 36 L330 68 L360 24 L391 76 L423 32 L454 70 L486 26 L520 64" />
+          <path class="service-doodle service-doodle-three" pathLength="100" d="M566 54 C566 18 624 16 624 48 C624 80 578 80 578 50 C578 26 618 24 646 54 S694 82 724 38 S772 26 804 58" />
+          <path class="service-doodle service-doodle-four" pathLength="100" d="M838 58 Q858 18 878 58 T918 58 T958 58 T998 58 T1038 58" />
+          <path class="service-doodle service-doodle-five" pathLength="100" d="M1070 70 C1098 70 1096 28 1124 28 C1152 28 1150 72 1178 72 S1208 24 1236 24 S1264 68 1292 68" />
+          <path class="service-doodle service-doodle-six" pathLength="100" d="M1314 36 L1340 62 L1366 30 L1392 70 L1418 34" />
+        </svg>
+        <div class="container logo-row" role="region" aria-label="Cach3Flow services">
+          <div class="service-marquee-track">
+            <div class="service-marquee-set" role="list">
+              <span role="listitem">Web Development</span>
+              <span role="listitem">Custom Software</span>
+              <span role="listitem">Cross-Platform Apps</span>
+              <span role="listitem">Web Hosting</span>
+              <span role="listitem">Cybersecurity</span>
+              <span role="listitem">SEO</span>
+              <span role="listitem">Web Management</span>
+              <span role="listitem">Hardware Solutions</span>
+              <span role="listitem">Networking</span>
+              <span role="listitem">IT Technician Services</span>
+            </div>
+            <div class="service-marquee-set" aria-hidden="true">
+              <span>Web Development</span>
+              <span>Custom Software</span>
+              <span>Cross-Platform Apps</span>
+              <span>Web Hosting</span>
+              <span>Cybersecurity</span>
+              <span>SEO</span>
+              <span>Web Management</span>
+              <span>Hardware Solutions</span>
+              <span>Networking</span>
+              <span>IT Technician Services</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="support" class="section quote-section">
+        <div class="container quote-block">
+          <div class="eyebrow" style="margin: 0 auto 18px;" aria-hidden="true"></div>
+          <h2 class="section-title">Technology support that<br />keeps work moving</h2>
+          <p>Build new systems, protect the ones you have, and get dependable help as your technology needs change.</p>
+        </div>
+
+        <div class="container card-grid">
+          <article class="card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <circle cx="12" cy="14" r="3"></circle>
+                <path d="M12 11v1M12 16v1M13.5 12.5l-.7.7M11.2 14.8l-.7.7M13.5 15.5l-.7-.7M11.2 13.2l-.7-.7M14 12h1M9 15h1M15 15h1M9 12h1"></path>
+              </svg>
+            </div>
+            <h3>Plan &amp; Build</h3>
+            <p>Get a clear path from an idea to a website, software system, or cross-platform application.</p>
+          </article>
+          <article class="card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <rect x="9" y="11" width="6" height="5" rx="1"></rect>
+                <path d="M10 11V9a2 2 0 0 1 4 0v2"></path>
+              </svg>
+            </div>
+            <h3>Protect &amp; Connect</h3>
+            <p>Bring cybersecurity, hosting, hardware, and networking together to support your day-to-day operations.</p>
+          </article>
+          <article class="card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.7-3.7a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0l-3.7 3.7z"></path>
+                <path d="M4 21l4-1 3-3-2-2-3 3-1 3z"></path>
+                <circle cx="17" cy="17" r="3"></circle>
+                <path d="M17 14v1M17 19v1M15.5 15.5l.7.7M18.8 18.8l.7.7M19 17h1M14 17h1M18.8 15.2l.7-.7M15.5 18.5l.7-.7"></path>
+              </svg>
+            </div>
+            <h3>Maintain &amp; Improve</h3>
+            <p>Keep websites and systems current with SEO, web management, troubleshooting, and ongoing IT technician support.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section cta">
+        <div class="container">
+          <div class="cta-panel">
+            <div class="cta-copy">
+              <h2>Let’s solve your next technology challenge.</h2>
+              <p>Tell us what you’re building, improving, or troubleshooting and we’ll help you find a practical next step.</p>
+            </div>
+            <a class="btn btn-primary" href="mailto:hello@cach3flow.com?subject=Technology%20services%20inquiry">Talk to Cach3Flow</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-brand-mark" aria-label="Cach3Flow brand">
+              <span class="brand-mark">&lt;/&gt;</span>
+              <span class="brand-name">Cach3Flow</span>
+            </div>
+            <p>
+              Software development and dependable IT services for the technology your business relies on.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Company</h4>
+            <a href="about.php">About us</a>
+            <a href="services.php">Services</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="it-support.php">IT support</a>
+            <a href="contact.php">Contact</a>
+          </div>
+
+          <div class="footer-links">
+            <h4>Services</h4>
+            <a href="services.php#web-software">Web &amp; software</a>
+            <a href="services.php#applications">Cross-platform apps</a>
+            <a href="services.php#hosting-security">Hosting, security &amp; SEO</a>
+            <a href="it-support.php#hardware-networking">Hardware &amp; networking</a>
+          </div>
+
+          <div class="footer-cta">
+            <h4>Get in touch</h4>
+            <p><a href="mailto:hello@cach3flow.com">hello@cach3flow.com</a></p>
+            <p>Tell us what support you need.</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 Cach3Flow</span>
+          <span>Software, web, and IT services</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details | Cach3Flow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Style/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" aria-label="Cach3Flow brand">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-name">Cach3Flow</span>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.php">Home</a>
+          <a href="about.php">About us</a>
+          <a href="services.php">Services</a>
+          <a href="portfolio.php" aria-current="page">Portfolio</a>
+          <a href="it-support.php">IT support</a>
+          <a href="contact.php">Contact</a>
+        </nav>
+        <a class="btn btn-primary" href="contact.php">Contact us</a>
+        <details class="mobile-menu">
+          <summary aria-label="Toggle navigation menu" title="Menu"><span class="mobile-menu-icon" aria-hidden="true"></span></summary>
+          <nav class="mobile-menu-panel" aria-label="Mobile navigation">
+            <a href="index.php">Home</a>
+            <a href="about.php">About us</a>
+            <a href="services.php">Services</a>
+            <a href="portfolio.php" aria-current="page">Portfolio</a>
+            <a href="it-support.php">IT support</a>
+            <a href="contact.php">Contact</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-content">
+          <div class="eyebrow" aria-hidden="true"></div>
+          <p class="page-kicker">Project details</p>
+          <h1>How Cach3Flow approaches digital and IT work.</h1>
+          <p>Explore the scope and approach behind each project area. These examples describe the kinds of solutions we offer, not named client case studies.</p>
+        </div>
+      </section>
+
+      <section class="section services">
+        <div class="container services-grid">
+          <article id="web-software" class="service-card project-detail">
+            <div class="service-icon"><img src="Images/Website-and-software-icon.png" alt="" /></div>
+            <p class="portfolio-category">WEB &amp; SOFTWARE</p>
+            <h2 class="page-section-title">Websites and business tools</h2>
+            <p class="project-detail-copy">A typical engagement can include planning the site structure, designing responsive pages, building custom features, connecting business tools, and preparing the site for ongoing management.</p>
+            <p class="project-detail-copy"><strong>Possible scope:</strong> website development, custom software, integrations, content updates, and maintenance.</p>
+          </article>
+          <article id="applications" class="service-card featured project-detail">
+            <div class="service-icon"><img src="Images/Cross-platform-apps-icon.png" alt="" /></div>
+            <p class="portfolio-category">APPLICATIONS</p>
+            <h2 class="page-section-title">Cross-platform apps</h2>
+            <p class="project-detail-copy">Application projects start with the user workflow and the platforms people need to use. From there, features and interface behavior can be planned for a consistent mobile and desktop experience.</p>
+            <p class="project-detail-copy"><strong>Possible scope:</strong> product planning, interface design, app development, testing, and release support.</p>
+          </article>
+          <article id="infrastructure" class="service-card project-detail">
+            <div class="service-icon"><img src="Images/IT_Infrastructure-icon.png" alt="" /></div>
+            <p class="portfolio-category">INFRASTRUCTURE &amp; IT</p>
+            <h2 class="page-section-title">Secure, connected systems</h2>
+            <p class="project-detail-copy">Infrastructure work connects the online and workplace technology a business relies on, with attention to practical security, dependable access, and ongoing support.</p>
+            <p class="project-detail-copy"><strong>Possible scope:</strong> hosting, cybersecurity, SEO, hardware solutions, networking, web management, and technician services.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta">
+        <div class="container">
+          <div class="cta-panel">
+            <div class="cta-copy">
+              <h2>Looking for a specific project outcome?</h2>
+              <p>Contact Cach3Flow to discuss your requirements and how we can help.</p>
+            </div>
+            <a class="btn btn-primary" href="contact.php">Discuss your project</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-brand-mark" aria-label="Cach3Flow brand">
+              <span class="brand-mark">&lt;/&gt;</span>
+              <span class="brand-name">Cach3Flow</span>
+            </div>
+            <p>Software development and dependable IT services for the technology your business relies on.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <a href="about.php">About us</a>
+            <a href="services.php">Services</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="it-support.php">IT support</a>
+            <a href="contact.php">Contact</a>
+          </div>
+          <div class="footer-links">
+            <h4>Services</h4>
+            <a href="services.php#web-software">Web &amp; software</a>
+            <a href="services.php#applications">Cross-platform apps</a>
+            <a href="services.php#hosting-security">Hosting, security &amp; SEO</a>
+            <a href="it-support.php#hardware-networking">Hardware &amp; networking</a>
+          </div>
+          <div class="footer-cta">
+            <h4>Get in touch</h4>
+            <p><a href="mailto:hello@cach3flow.com">hello@cach3flow.com</a></p>
+            <p>Tell us what support you need.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Cach3Flow</span>
+          <span>Software, web, and IT services</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
